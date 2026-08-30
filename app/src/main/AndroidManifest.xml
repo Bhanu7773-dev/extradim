@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Privileged permission granted once via ADB -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_dim"
+        android:label="Extra Dim"
+        android:theme="@style/Theme.ExtraDim"
+        android:supportsRtl="true">
+
+        <!-- Quick Settings Tile Service (No Activity declared as launcher) -->
+        <service
+            android:name=".ExtraDimTileService"
+            android:icon="@drawable/ic_dim"
+            android:label="Extra Dim"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Long-Press Intensity & Settings Dialog (Opened via QS Tile long-press, No Launcher) -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Extra Dim Settings"
+            android:theme="@style/Theme.ExtraDim.Dialog"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

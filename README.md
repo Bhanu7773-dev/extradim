@@ -43,16 +43,16 @@ A lightweight, headless Android application that provides a Quick Settings (QS) 
 
 ## Build & Installation
 
-### 1. Build APK
+### 1. Build Release APK
 ```bash
-./gradlew assembleDebug
+./gradlew assembleRelease
 ```
-The APK will be generated at:
-`app/build/outputs/apk/debug/app-debug.apk`
+The optimized Release APK will be generated at:
+`app/build/outputs/apk/release/app-release.apk` (Size: ~17 KB)
 
 ### 2. Install on Device
 ```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb install -r app/build/outputs/apk/release/app-release.apk
 ```
 
 ### 3. Grant Required Permission (Non-Rooted & Rooted Setup)

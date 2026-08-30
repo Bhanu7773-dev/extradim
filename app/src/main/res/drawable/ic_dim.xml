@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <!-- Minimalist 2D Outline Eclipse Icon -->
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="1.75"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M12,2.5v2M12,19.5v2M2.5,12h2M19.5,12h2M5.28,5.28l1.42,1.42M17.3,17.3l1.42,1.42M5.28,18.72l1.42,-1.42M17.3,6.7l1.42,-1.42"/>
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="1.75"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M12,19c-3.87,0 -7,-3.13 -7,-7s3.13,-7 7,-7c1.5,0 2.89,0.47 4.03,1.28 -2.41,1.03 -4.03,3.38 -4.03,5.72s1.62,4.69 4.03,5.72C14.89,18.53 13.5,19 12,19z"/>
+</vector>
